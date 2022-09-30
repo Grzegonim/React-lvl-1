@@ -1,0 +1,26 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  font-size: 15px;
+  background-color: darken($color-dark, 3%);
+  height: 50px;
+  font-weight: 600;
+  a {
+    color: $color-light;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+}
+.icon::before {
+  font-size: 24px;
+}
+
+.navright {
+  display: flex;
+  list-style: none;
+}

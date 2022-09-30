@@ -1,6 +1,5 @@
 import styles from './List.module.scss'
 import Column from '../Column/Column';
-import {useState} from 'react';
 import { useSelector } from 'react-redux';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { getAllColumns } from '../../redux/store';
