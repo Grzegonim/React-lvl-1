@@ -6,11 +6,11 @@ import { useState } from 'react';
 import { updateSearch } from '../../redux/store';
 
 const SearchForm = () => {
-    const [searchInputTitle, setInputTitle] = useState('')
+    const [searchInputTitle, setInputTitle] = useState('');
     const dispatch = useDispatch();
     const searchTitle = e => {
         e.preventDefault();
-        dispatch(updateSearch( searchInputTitle.toLowerCase() ))
+        dispatch(updateSearch(searchInputTitle));
     };
 
     return (
