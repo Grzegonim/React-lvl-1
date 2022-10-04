@@ -1,0 +1,18 @@
+// actions
+const createActionName = actionName => `app/searchString/${actionName}`;
+const UPDATE_SEARCHSTRING = createActionName('UPDATE_SEARCHSTRING');
+
+// action creators
+export const updateSearch = payload => ({ type: 'UPDATE_SEARCHSTRING', payload });
+export const toggleFavorite = payload => ({ type:'TOGGLE_CARD_FAVORITE', payload });
+
+const searchStringReducer = (statePart = '', action) => {
+  switch(action.type) {
+    case 'UPDATE_SEARCHSTRING':
+      return action.payload
+    default:
+      return statePart;
+  }
+}
+
+export default searchStringReducer;

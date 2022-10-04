@@ -22,7 +22,13 @@
   span {
     color: goldenrod;
   }
+  
+  span[class*="trash"]{
+    color: black;
+  }
 }
+
+
 
 @media (max-width: 767px) {
   .column {
