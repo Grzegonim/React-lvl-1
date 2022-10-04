@@ -11,7 +11,6 @@ export const getColumnByList = ({columns}, listId) => columns.filter(column => c
 export const getAllLists = state => state.lists;
 export const getFavoriteCard = state => state.cards.filter(card => card.isFavorite === true);
 
-
 // action creators
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 export const addCard = payload => ({ type: 'ADD_CARD', payload });

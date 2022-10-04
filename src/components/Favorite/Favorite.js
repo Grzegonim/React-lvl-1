@@ -6,7 +6,6 @@ import styles from './Favorite.module.scss';
 
 const Favorite = () => {
   const favoriteCards = useSelector(getFavoriteCard);
-  console.log(favoriteCards)
   return (
     <article className={styles.article}>
       <PageTitle>Favortie</PageTitle>
